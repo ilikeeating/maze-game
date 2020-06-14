@@ -140,7 +140,7 @@ for frame in itertools.count():
     if frame % 3 == 0 and mode == '1':
         # Move bot
         bot_choice = bot.choose_move(bone_locations, cat_pos)
-        if bot_choice in keys:
+        if bot_choice in bot_keys:
             process_key(bot_keys[bot_choice])
 
     screen.fill([255,255,255])
